@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css'; // Create this file for Navbar-specific styles
+import './Navbar.css';
 
 function Navbar() {
     return (
         <nav className="navbar">
             <NavLink to="/" className="nav-logo">
-                W3School Clone
+                LearnStack
             </NavLink>
             <div className="nav-links">
                 <NavLink

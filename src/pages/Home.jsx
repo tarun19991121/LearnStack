@@ -6,8 +6,8 @@ import './Home.css'; // Create this file for Home-specific styles
 function Home() {
   return (
     <div className="home">
-      <h1>Welcome to W3School Clone</h1>
-      <p>Select a topic to get started:</p>
+      <h1>Welcome to LearnStack</h1>
+      <p>Select a topic to get started with your journey in LEARNING</p>
       <div className="home-links">
         <Link to="/html" className="home-link">
           HTML

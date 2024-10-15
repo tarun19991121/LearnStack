@@ -3,7 +3,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Content from '../components/Content';
-import htmlTopics from '../data/htmlTopics';
+import jsTopics from '../data/htmlTopics';
 
 function Javascript() {
   return (
@@ -12,7 +12,7 @@ function Javascript() {
       <div className="content-area">
         <Routes>
           <Route path="/" element={<Navigate to={jsTopics[0].path} />} />
-          {htmlTopics.map((topic) => (
+          {jsTopics.map((topic) => (
             <Route
               key={topic.path}
               path={topic.path}

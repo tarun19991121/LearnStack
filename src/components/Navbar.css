@@ -1,8 +1,10 @@
 .navbar {
     display: flex;
     align-items: center;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    background-color: #4ee8bf;
     padding: 10px 20px;
+
 }
 
 .nav-logo {
@@ -13,15 +15,24 @@
     color: #333;
 }
 
+.nav-links {
+    padding: 4px;
+}
+
 .nav-links .nav-link {
-    margin-left: 20px;
+    margin-left: 40px;
     text-decoration: none;
-    color: #333;
+    color: white;
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.nav-links .nav-link:hover {
+    background-color: rgb(63, 40, 192);
 }
 
 .nav-links .nav-link.active {
-    background-color: red;
+    background-color: rgb(248, 0, 0);
     color: white;
 }
