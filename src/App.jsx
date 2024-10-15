@@ -1,22 +1,28 @@
 import React from 'react';
-import Header from './components/Header/Header';
-import Sidebar from './components/Sidebar/Sidebar';
-import MainContent from './components/MainContent/MainContent';
-import Footer from './components/Footer/Footer';
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import HTML from './pages/HTML';
+import CSS from './pages/CSS';
+import JavaScript from './pages/JavaScript';
+import './App.css';
 
 function App() {
-
   return (
-    <>
-      <Header />
-      <div className="mid">
-        <Sidebar />
-        <MainContent />
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/html/*" element={<HTML />} />
+            <Route path="/css/*" element={<CSS />} />
+            <Route path="/javascript/*" element={<JavaScript />} />
+          </Routes>
+        </div>
       </div>
-      <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

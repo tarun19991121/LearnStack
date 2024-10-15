@@ -1,0 +1,31 @@
+/* src/components/Sidebar.css */
+.sidebar {
+    width: 200px;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.sidebar-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
