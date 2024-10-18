@@ -3,33 +3,42 @@
     align-items: center;
     /* background-color: #f1f1f1; */
     background-color: #4ee8bf;
-    padding: 10px 20px;
+    padding: 0.75rem 4rem;
 
 }
 
 .nav-logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     margin-right: auto;
     text-decoration: none;
     color: #333;
+    text-shadow: 4px 4px 8px rgb(255, 217, 112);
+    transition-duration: 0.25s;
+}
+
+.nav-logo:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .nav-links {
-    padding: 4px;
+    padding: 0.25rem;
 }
 
 .nav-links .nav-link {
+    display: inline-block;
     margin-left: 40px;
     text-decoration: none;
     color: white;
-    padding: 5px 10px;
-    border-radius: 6px;
     padding: 8px;
+    border-radius: 6px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    transition-duration: 0.25s;
 }
 
 .nav-links .nav-link:hover {
     background-color: rgb(63, 40, 192);
+    transform: scale(1.1, 1.1);
 }
 
 .nav-links .nav-link.active {
